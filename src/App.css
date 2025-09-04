@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.container {
+  background: #2b2b2b;
+  padding: 20px;
+  border-radius: 12px;
+  width: 600px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #3b3b3b;
+  color: #ffffff;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaaaaa;
+}
+
+textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+button {
+  padding: 10px 16px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #4f46e5;
+}
+
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+.note-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.note-list li {
+  background: #3a3a3a;
+  margin-bottom: 16px;       /* jarak antar card */
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #444;    /* pembatas tipis */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.note-list li:last-child {
+  margin-bottom: 0;          /* hilangkan jarak ekstra di bawah */
+}
+
+.note-list h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.note-list p {
+  margin: 0;
+  font-size: 14px;
+  color: #cccccc;
+  word-wrap: break-word;     /* biar teks panjang tidak tembus */
+  max-width: 420px;          /* biar tombol tidak ketendang */
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 70px;
+}
+
+.actions button {
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
